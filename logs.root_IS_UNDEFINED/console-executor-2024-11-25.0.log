@@ -1,0 +1,157 @@
+[INFO ] 2024-11-25 15:11:59.481 [main] c.e.g.a.s.r.CryptoManager - Current security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:11:59.488 [main] c.e.g.a.s.r.CryptoManager - New security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[ERROR] 2024-11-25 15:11:59.514 [main] c.e.g.e.c.i.p.LastStep - Input data error: Количество переданных методу Скрипт аргументов (0) не соответствует количеству объявленных параметров (1)
+com.e1c.g5rt.executor.core.internal.converter.ConverterException: Input data error: Количество переданных методу Скрипт аргументов (0) не соответствует количеству объявленных параметров (1)
+	at com.e1c.g5rt.executor.core.internal.converter.Converter.checkArgumentsRightNumber(Converter.java:138)
+	at com.e1c.g5rt.executor.core.internal.converter.Converter.convert(Converter.java:63)
+	at com.e1c.g5rt.executor.core.internal.command.ExecuteScriptCommand.executeCommand(ExecuteScriptCommand.java:135)
+	at com.e1c.g5rt.executor.core.Executor.executeCommand(Executor.java:25)
+	at com.e1c.g5rt.executor.client.internal.parser.ConsoleExecutionStep.perform(ConsoleExecutionStep.java:62)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:26)
+	at com.e1c.g5rt.executor.client.internal.parser.ConsoleExecutionStep.run(ConsoleExecutionStep.java:30)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.ParseMethodArgumentsStep.run(ParseMethodArgumentsStep.java:18)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.ParseScriptPathAndMethodStep.run(ParseScriptPathAndMethodStep.java:14)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.CheckEmptyParamsStep.run(CheckEmptyParamsStep.java:14)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.FirstStep.run(FirstStep.java:12)
+	at com.e1c.g5rt.executor.client.ConsoleExecutor.run(ConsoleExecutor.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.e1c.g5rt.executor.boot.ExecutorBootstrap.boot(ExecutorBootstrap.java:51)
+	at com.e1c.g5rt.executor.boot.ExecutorBootstrap.main(ExecutorBootstrap.java:17)
+[ERROR] 2024-11-25 15:32:28.526 [main] c.e.g.e.c.i.p.LastStep - Ошибки компиляции скрипта:
+c:\Users\kudashkin\Documents\Executer\1С_Предприятие\АдминистрированиеСервера.sbsl:
+Ключевые слова должны быть в нижнем регистре[3:15]
+Тип "АдминистрированиеСервера" не имеет конструкторов [3:21]
+Переменная "адм" не определена [4:20]
+com.e1c.g5rt.xbsl.api.CompilationException: c:\Users\kudashkin\Documents\Executer\1С_Предприятие\АдминистрированиеСервера.sbsl:
+Ключевые слова должны быть в нижнем регистре[3:15]
+Тип "АдминистрированиеСервера" не имеет конструкторов [3:21]
+Переменная "адм" не определена [4:20]
+	at com.e1c.g5rt.executor.modules.runtime.ExecutorEnvironmentService.createEnvironment(ExecutorEnvironmentService.java:41)
+	at com.e1c.g5rt.executor.core.internal.command.ExecuteScriptCommand.executeCommand(ExecuteScriptCommand.java:87)
+	at com.e1c.g5rt.executor.core.Executor.executeCommand(Executor.java:25)
+	at com.e1c.g5rt.executor.client.internal.parser.ConsoleExecutionStep.perform(ConsoleExecutionStep.java:62)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:26)
+	at com.e1c.g5rt.executor.client.internal.parser.ConsoleExecutionStep.run(ConsoleExecutionStep.java:30)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.ParseMethodArgumentsStep.run(ParseMethodArgumentsStep.java:18)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.ParseScriptPathAndMethodStep.run(ParseScriptPathAndMethodStep.java:14)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.CheckEmptyParamsStep.run(CheckEmptyParamsStep.java:14)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.FirstStep.run(FirstStep.java:12)
+	at com.e1c.g5rt.executor.client.ConsoleExecutor.run(ConsoleExecutor.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.e1c.g5rt.executor.boot.ExecutorBootstrap.boot(ExecutorBootstrap.java:51)
+	at com.e1c.g5rt.executor.boot.ExecutorBootstrap.main(ExecutorBootstrap.java:17)
+[ERROR] 2024-11-25 15:36:51.343 [main] c.e.g.e.c.i.p.LastStep - Ошибки компиляции скрипта:
+c:\Users\kudashkin\Documents\Executer\1С_Предприятие\АдминистрированиеСервера.sbsl:
+Ожидается новая строка[3:15]
+Переменная "Новый" не определена [3:15]
+Значение не используется [3:21]
+Переменная "адм" не определена [5:20]
+com.e1c.g5rt.xbsl.api.CompilationException: c:\Users\kudashkin\Documents\Executer\1С_Предприятие\АдминистрированиеСервера.sbsl:
+Ожидается новая строка[3:15]
+Переменная "Новый" не определена [3:15]
+Значение не используется [3:21]
+Переменная "адм" не определена [5:20]
+	at com.e1c.g5rt.executor.modules.runtime.ExecutorEnvironmentService.createEnvironment(ExecutorEnvironmentService.java:41)
+	at com.e1c.g5rt.executor.core.internal.command.ExecuteScriptCommand.executeCommand(ExecuteScriptCommand.java:87)
+	at com.e1c.g5rt.executor.core.Executor.executeCommand(Executor.java:25)
+	at com.e1c.g5rt.executor.client.internal.parser.ConsoleExecutionStep.perform(ConsoleExecutionStep.java:62)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:26)
+	at com.e1c.g5rt.executor.client.internal.parser.ConsoleExecutionStep.run(ConsoleExecutionStep.java:30)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.ParseMethodArgumentsStep.run(ParseMethodArgumentsStep.java:18)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.ParseScriptPathAndMethodStep.run(ParseScriptPathAndMethodStep.java:14)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.CheckEmptyParamsStep.run(CheckEmptyParamsStep.java:14)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.FirstStep.run(FirstStep.java:12)
+	at com.e1c.g5rt.executor.client.ConsoleExecutor.run(ConsoleExecutor.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.e1c.g5rt.executor.boot.ExecutorBootstrap.boot(ExecutorBootstrap.java:51)
+	at com.e1c.g5rt.executor.boot.ExecutorBootstrap.main(ExecutorBootstrap.java:17)
+[ERROR] 2024-11-25 15:47:43.891 [main] c.e.g.e.c.i.p.LastStep - Ошибки компиляции скрипта:
+c:\Users\kudashkin\Documents\Executer\1С_Предприятие\АдминистрированиеСервера.sbsl:
+Неожиданный элемент '<Конец файла>', ожидается ';'[7:1]
+Тип "АдминистрированиеСервера" не имеет конструкторов [2:20]
+Неизвестный метод "АдминистрированиеСервера.ПолучитьКластеры" [3:23]
+com.e1c.g5rt.xbsl.api.CompilationException: c:\Users\kudashkin\Documents\Executer\1С_Предприятие\АдминистрированиеСервера.sbsl:
+Неожиданный элемент '<Конец файла>', ожидается ';'[7:1]
+Тип "АдминистрированиеСервера" не имеет конструкторов [2:20]
+Неизвестный метод "АдминистрированиеСервера.ПолучитьКластеры" [3:23]
+	at com.e1c.g5rt.executor.modules.runtime.ExecutorEnvironmentService.createEnvironment(ExecutorEnvironmentService.java:41)
+	at com.e1c.g5rt.executor.core.internal.command.ExecuteScriptCommand.executeCommand(ExecuteScriptCommand.java:87)
+	at com.e1c.g5rt.executor.core.Executor.executeCommand(Executor.java:25)
+	at com.e1c.g5rt.executor.client.internal.parser.ConsoleExecutionStep.perform(ConsoleExecutionStep.java:62)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:26)
+	at com.e1c.g5rt.executor.client.internal.parser.ConsoleExecutionStep.run(ConsoleExecutionStep.java:30)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.ParseMethodArgumentsStep.run(ParseMethodArgumentsStep.java:18)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.ParseScriptPathAndMethodStep.run(ParseScriptPathAndMethodStep.java:14)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.CheckEmptyParamsStep.run(CheckEmptyParamsStep.java:14)
+	at com.e1c.g5rt.executor.client.internal.parser.AbstractStep.run(AbstractStep.java:35)
+	at com.e1c.g5rt.executor.client.internal.parser.FirstStep.run(FirstStep.java:12)
+	at com.e1c.g5rt.executor.client.ConsoleExecutor.run(ConsoleExecutor.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.e1c.g5rt.executor.boot.ExecutorBootstrap.boot(ExecutorBootstrap.java:51)
+	at com.e1c.g5rt.executor.boot.ExecutorBootstrap.main(ExecutorBootstrap.java:17)
+[INFO ] 2024-11-25 15:55:01.162 [main] c.e.g.a.s.r.CryptoManager - Current security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:55:01.177 [main] c.e.g.a.s.r.CryptoManager - New security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:55:01.429 [main] c.e.g.a.s.r.SystemCertificatesReader - Loaded certificates with aliases: [T8-8361.T8.CORP, GlobalSign Code Signing Root R45, Go Daddy Root Certificate Authority  G, Sectigo (formerly Comodo CA), DigiCert (2), Local NetFlt CA 3, DigiCert Baltimore Root, ISRG Root X1, Sectigo (AddTrust), Certum Trusted Network CA, Microsoft Authenticode(tm) Root, T8-AD-CA, GlobalSign Root CA - R6, GlobalSign Root CA - R3, GlobalSign Root CA - R1, TWCA Global Root CA, VeriSign Class 3 Public Primary CA, VeriSign Time Stamping CA, CFCA EV ROOT, GlobalSign ECC Root CA - R5, QuoVadis Root Certification Authority, SECOM Trust Systems Co Ltd., Entrust (2048), Microsoft RSA Root Certificate Authority 2017, Certum Trusted Network CA 2, Entrust.net, Symantec Enterprise Mobile Root for Microsoft, Microsoft Root Certificate Authority, Microsoft ECC Product Root Certificate Authority 2018, Microsoft Time Stamp Root Certificate Authority 2014, Hellenic Academic and Research Institutions RootCA 2015, Go Daddy Class 2 Certification Authority, DigiCert Trusted Root G4, Symfony T8\kudashkin@T8-8361 (Êóäàøêèí Ñåðãåé Èâàíîâè÷), thawte, DigiCert CS RSA4096 Root G5, Kaspersky Endpoint Security Personal Certification Authority, Sectigo (AAA), DST Root CA X3, StartCom Certification Authority, Sectigo (UTN Object), VeriSign, Microsoft ECC TS Root Certificate Authority 2018, Starfield Class 2 Certification Authority, HARICA TLS RSA Root CA 2021, Thawte Timestamping CA, Actalis Authentication Root CA, T8-CA, SSL.com Root Certification Authority RSA, DigiCert, Microsoft Root Certificate Authority 2011, Sectigo, Hotspot 2.0 Trust Root CA - 03, AD-CS, WoSign, Microsoft Timestamp Root, T8-AD-CS-CA, DigiCert Global Root G2, Microsoft Root Authority, DigiCert (1), DigiCert Global Root G3, Trustwave, VeriSign Universal Root Certification Authority, Microsoft Root Certificate Authority 2010, Starfield Root Certificate Authority  G]
+[INFO ] 2024-11-25 15:55:01.610 [main] c._.v.s.i.n.Connector - Trying to connect to localhost/127.0.0.1:1545
+[ERROR] 2024-11-25 15:55:01.644 [main] c.e.g.e.c.i.p.ConsoleExecutionStep - Ошибка при обращении к кластеру. Отсутствует соединение
+Scripts::АдминистрированиеСервера.Скрипт[2]
+[INFO ] 2024-11-25 15:55:22.115 [main] c.e.g.a.s.r.CryptoManager - Current security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:55:22.122 [main] c.e.g.a.s.r.CryptoManager - New security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:55:22.270 [main] c.e.g.a.s.r.SystemCertificatesReader - Loaded certificates with aliases: [T8-8361.T8.CORP, GlobalSign Code Signing Root R45, Go Daddy Root Certificate Authority  G, Sectigo (formerly Comodo CA), DigiCert (2), Local NetFlt CA 3, DigiCert Baltimore Root, ISRG Root X1, Sectigo (AddTrust), Certum Trusted Network CA, Microsoft Authenticode(tm) Root, T8-AD-CA, GlobalSign Root CA - R6, GlobalSign Root CA - R3, GlobalSign Root CA - R1, TWCA Global Root CA, VeriSign Class 3 Public Primary CA, VeriSign Time Stamping CA, CFCA EV ROOT, GlobalSign ECC Root CA - R5, QuoVadis Root Certification Authority, SECOM Trust Systems Co Ltd., Entrust (2048), Microsoft RSA Root Certificate Authority 2017, Certum Trusted Network CA 2, Entrust.net, Symantec Enterprise Mobile Root for Microsoft, Microsoft Root Certificate Authority, Microsoft ECC Product Root Certificate Authority 2018, Microsoft Time Stamp Root Certificate Authority 2014, Hellenic Academic and Research Institutions RootCA 2015, Go Daddy Class 2 Certification Authority, DigiCert Trusted Root G4, Symfony T8\kudashkin@T8-8361 (Êóäàøêèí Ñåðãåé Èâàíîâè÷), thawte, DigiCert CS RSA4096 Root G5, Kaspersky Endpoint Security Personal Certification Authority, Sectigo (AAA), DST Root CA X3, StartCom Certification Authority, Sectigo (UTN Object), VeriSign, Microsoft ECC TS Root Certificate Authority 2018, Starfield Class 2 Certification Authority, HARICA TLS RSA Root CA 2021, Thawte Timestamping CA, Actalis Authentication Root CA, T8-CA, SSL.com Root Certification Authority RSA, DigiCert, Microsoft Root Certificate Authority 2011, Sectigo, Hotspot 2.0 Trust Root CA - 03, AD-CS, WoSign, Microsoft Timestamp Root, T8-AD-CS-CA, DigiCert Global Root G2, Microsoft Root Authority, DigiCert (1), DigiCert Global Root G3, Trustwave, VeriSign Universal Root Certification Authority, Microsoft Root Certificate Authority 2010, Starfield Root Certificate Authority  G]
+[INFO ] 2024-11-25 15:55:22.442 [main] c._.v.s.i.n.Connector - Trying to connect to 1cserver/192.168.8.59:1545
+[ERROR] 2024-11-25 15:55:24.509 [main] c.e.g.e.c.i.p.ConsoleExecutionStep - Ошибка при обращении к кластеру. Отсутствует соединение
+Scripts::АдминистрированиеСервера.Скрипт[2]
+[INFO ] 2024-11-25 15:56:16.308 [main] c.e.g.a.s.r.CryptoManager - Current security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:56:16.308 [main] c.e.g.a.s.r.CryptoManager - New security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:56:16.459 [main] c.e.g.a.s.r.SystemCertificatesReader - Loaded certificates with aliases: [T8-8361.T8.CORP, GlobalSign Code Signing Root R45, Go Daddy Root Certificate Authority  G, Sectigo (formerly Comodo CA), DigiCert (2), Local NetFlt CA 3, DigiCert Baltimore Root, ISRG Root X1, Sectigo (AddTrust), Certum Trusted Network CA, Microsoft Authenticode(tm) Root, T8-AD-CA, GlobalSign Root CA - R6, GlobalSign Root CA - R3, GlobalSign Root CA - R1, TWCA Global Root CA, VeriSign Class 3 Public Primary CA, VeriSign Time Stamping CA, CFCA EV ROOT, GlobalSign ECC Root CA - R5, QuoVadis Root Certification Authority, SECOM Trust Systems Co Ltd., Entrust (2048), Microsoft RSA Root Certificate Authority 2017, Certum Trusted Network CA 2, Entrust.net, Symantec Enterprise Mobile Root for Microsoft, Microsoft Root Certificate Authority, Microsoft ECC Product Root Certificate Authority 2018, Microsoft Time Stamp Root Certificate Authority 2014, Hellenic Academic and Research Institutions RootCA 2015, Go Daddy Class 2 Certification Authority, DigiCert Trusted Root G4, Symfony T8\kudashkin@T8-8361 (Êóäàøêèí Ñåðãåé Èâàíîâè÷), thawte, DigiCert CS RSA4096 Root G5, Kaspersky Endpoint Security Personal Certification Authority, Sectigo (AAA), DST Root CA X3, StartCom Certification Authority, Sectigo (UTN Object), VeriSign, Microsoft ECC TS Root Certificate Authority 2018, Starfield Class 2 Certification Authority, HARICA TLS RSA Root CA 2021, Thawte Timestamping CA, Actalis Authentication Root CA, T8-CA, SSL.com Root Certification Authority RSA, DigiCert, Microsoft Root Certificate Authority 2011, Sectigo, Hotspot 2.0 Trust Root CA - 03, AD-CS, WoSign, Microsoft Timestamp Root, T8-AD-CS-CA, DigiCert Global Root G2, Microsoft Root Authority, DigiCert (1), DigiCert Global Root G3, Trustwave, VeriSign Universal Root Certification Authority, Microsoft Root Certificate Authority 2010, Starfield Root Certificate Authority  G]
+[INFO ] 2024-11-25 15:56:16.626 [main] c._.v.s.i.n.Connector - Trying to connect to 1cserver/192.168.8.59:1545
+[ERROR] 2024-11-25 15:56:18.686 [main] c.e.g.e.c.i.p.ConsoleExecutionStep - Ошибка при обращении к кластеру. Отсутствует соединение
+Scripts::АдминистрированиеСервера.Скрипт[2]
+[INFO ] 2024-11-25 15:57:12.941 [main] c.e.g.a.s.r.CryptoManager - Current security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:57:12.949 [main] c.e.g.a.s.r.CryptoManager - New security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:57:13.093 [main] c.e.g.a.s.r.SystemCertificatesReader - Loaded certificates with aliases: [T8-8361.T8.CORP, GlobalSign Code Signing Root R45, Go Daddy Root Certificate Authority  G, Sectigo (formerly Comodo CA), DigiCert (2), Local NetFlt CA 3, DigiCert Baltimore Root, ISRG Root X1, Sectigo (AddTrust), Certum Trusted Network CA, Microsoft Authenticode(tm) Root, T8-AD-CA, GlobalSign Root CA - R6, GlobalSign Root CA - R3, GlobalSign Root CA - R1, TWCA Global Root CA, VeriSign Class 3 Public Primary CA, VeriSign Time Stamping CA, CFCA EV ROOT, GlobalSign ECC Root CA - R5, QuoVadis Root Certification Authority, SECOM Trust Systems Co Ltd., Entrust (2048), Microsoft RSA Root Certificate Authority 2017, Certum Trusted Network CA 2, Entrust.net, Symantec Enterprise Mobile Root for Microsoft, Microsoft Root Certificate Authority, Microsoft ECC Product Root Certificate Authority 2018, Microsoft Time Stamp Root Certificate Authority 2014, Hellenic Academic and Research Institutions RootCA 2015, Go Daddy Class 2 Certification Authority, DigiCert Trusted Root G4, Symfony T8\kudashkin@T8-8361 (Êóäàøêèí Ñåðãåé Èâàíîâè÷), thawte, DigiCert CS RSA4096 Root G5, Kaspersky Endpoint Security Personal Certification Authority, Sectigo (AAA), DST Root CA X3, StartCom Certification Authority, Sectigo (UTN Object), VeriSign, Microsoft ECC TS Root Certificate Authority 2018, Starfield Class 2 Certification Authority, HARICA TLS RSA Root CA 2021, Thawte Timestamping CA, Actalis Authentication Root CA, T8-CA, SSL.com Root Certification Authority RSA, DigiCert, Microsoft Root Certificate Authority 2011, Sectigo, Hotspot 2.0 Trust Root CA - 03, AD-CS, WoSign, Microsoft Timestamp Root, T8-AD-CS-CA, DigiCert Global Root G2, Microsoft Root Authority, DigiCert (1), DigiCert Global Root G3, Trustwave, VeriSign Universal Root Certification Authority, Microsoft Root Certificate Authority 2010, Starfield Root Certificate Authority  G]
+[INFO ] 2024-11-25 15:57:13.258 [main] c._.v.s.i.n.Connector - Trying to connect to 1cserver.T8.CORP/192.168.8.59:1545
+[ERROR] 2024-11-25 15:57:15.330 [main] c.e.g.e.c.i.p.ConsoleExecutionStep - Ошибка при обращении к кластеру. Отсутствует соединение
+Scripts::АдминистрированиеСервера.Скрипт[2]
+[INFO ] 2024-11-25 15:59:08.494 [main] c.e.g.a.s.r.CryptoManager - Current security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:59:08.515 [main] c.e.g.a.s.r.CryptoManager - New security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 15:59:08.662 [main] c.e.g.a.s.r.SystemCertificatesReader - Loaded certificates with aliases: [T8-8361.T8.CORP, GlobalSign Code Signing Root R45, Go Daddy Root Certificate Authority  G, Sectigo (formerly Comodo CA), DigiCert (2), Local NetFlt CA 3, DigiCert Baltimore Root, ISRG Root X1, Sectigo (AddTrust), Certum Trusted Network CA, Microsoft Authenticode(tm) Root, T8-AD-CA, GlobalSign Root CA - R6, GlobalSign Root CA - R3, GlobalSign Root CA - R1, TWCA Global Root CA, VeriSign Class 3 Public Primary CA, VeriSign Time Stamping CA, CFCA EV ROOT, GlobalSign ECC Root CA - R5, QuoVadis Root Certification Authority, SECOM Trust Systems Co Ltd., Entrust (2048), Microsoft RSA Root Certificate Authority 2017, Certum Trusted Network CA 2, Entrust.net, Symantec Enterprise Mobile Root for Microsoft, Microsoft Root Certificate Authority, Microsoft ECC Product Root Certificate Authority 2018, Microsoft Time Stamp Root Certificate Authority 2014, Hellenic Academic and Research Institutions RootCA 2015, Go Daddy Class 2 Certification Authority, DigiCert Trusted Root G4, Symfony T8\kudashkin@T8-8361 (Êóäàøêèí Ñåðãåé Èâàíîâè÷), thawte, DigiCert CS RSA4096 Root G5, Kaspersky Endpoint Security Personal Certification Authority, Sectigo (AAA), DST Root CA X3, StartCom Certification Authority, Sectigo (UTN Object), VeriSign, Microsoft ECC TS Root Certificate Authority 2018, Starfield Class 2 Certification Authority, HARICA TLS RSA Root CA 2021, Thawte Timestamping CA, Actalis Authentication Root CA, T8-CA, SSL.com Root Certification Authority RSA, DigiCert, Microsoft Root Certificate Authority 2011, Sectigo, Hotspot 2.0 Trust Root CA - 03, AD-CS, WoSign, Microsoft Timestamp Root, T8-AD-CS-CA, DigiCert Global Root G2, Microsoft Root Authority, DigiCert (1), DigiCert Global Root G3, Trustwave, VeriSign Universal Root Certification Authority, Microsoft Root Certificate Authority 2010, Starfield Root Certificate Authority  G]
+[INFO ] 2024-11-25 15:59:08.840 [main] c._.v.s.i.n.Connector - Trying to connect to 1cserver.T8.CORP :1545
+[INFO ] 2024-11-25 15:59:08.871 [main] c.e.g.e.c.i.p.ConsoleExecutionStep - [ExecuteScript]: done!
+[INFO ] 2024-11-25 16:04:13.269 [main] c.e.g.a.s.r.CryptoManager - Current security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 16:04:13.280 [main] c.e.g.a.s.r.CryptoManager - New security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 16:04:13.425 [main] c.e.g.a.s.r.SystemCertificatesReader - Loaded certificates with aliases: [T8-8361.T8.CORP, GlobalSign Code Signing Root R45, Go Daddy Root Certificate Authority  G, Sectigo (formerly Comodo CA), DigiCert (2), Local NetFlt CA 3, DigiCert Baltimore Root, ISRG Root X1, Sectigo (AddTrust), Certum Trusted Network CA, Microsoft Authenticode(tm) Root, T8-AD-CA, GlobalSign Root CA - R6, GlobalSign Root CA - R3, GlobalSign Root CA - R1, TWCA Global Root CA, VeriSign Class 3 Public Primary CA, VeriSign Time Stamping CA, CFCA EV ROOT, GlobalSign ECC Root CA - R5, QuoVadis Root Certification Authority, SECOM Trust Systems Co Ltd., Entrust (2048), Microsoft RSA Root Certificate Authority 2017, Certum Trusted Network CA 2, Entrust.net, Symantec Enterprise Mobile Root for Microsoft, Microsoft Root Certificate Authority, Microsoft ECC Product Root Certificate Authority 2018, Microsoft Time Stamp Root Certificate Authority 2014, Hellenic Academic and Research Institutions RootCA 2015, Go Daddy Class 2 Certification Authority, DigiCert Trusted Root G4, Symfony T8\kudashkin@T8-8361 (Êóäàøêèí Ñåðãåé Èâàíîâè÷), thawte, DigiCert CS RSA4096 Root G5, Kaspersky Endpoint Security Personal Certification Authority, Sectigo (AAA), DST Root CA X3, StartCom Certification Authority, Sectigo (UTN Object), VeriSign, Microsoft ECC TS Root Certificate Authority 2018, Starfield Class 2 Certification Authority, HARICA TLS RSA Root CA 2021, Thawte Timestamping CA, Actalis Authentication Root CA, T8-CA, SSL.com Root Certification Authority RSA, DigiCert, Microsoft Root Certificate Authority 2011, Sectigo, Hotspot 2.0 Trust Root CA - 03, AD-CS, WoSign, Microsoft Timestamp Root, T8-AD-CS-CA, DigiCert Global Root G2, Microsoft Root Authority, DigiCert (1), DigiCert Global Root G3, Trustwave, VeriSign Universal Root Certification Authority, Microsoft Root Certificate Authority 2010, Starfield Root Certificate Authority  G]
+[INFO ] 2024-11-25 16:04:13.598 [main] c._.v.s.i.n.Connector - Trying to connect to 1cserver.T8.CORP :1545
+[INFO ] 2024-11-25 16:04:13.626 [main] c.e.g.e.c.i.p.ConsoleExecutionStep - [ExecuteScript]: done!
+[INFO ] 2024-11-25 16:29:45.770 [main] c.e.g.a.s.r.CryptoManager - Current security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 16:29:45.786 [main] c.e.g.a.s.r.CryptoManager - New security provider list: SUN, SunRsaSign, SunEC, SunJSSE, SunJCE, SunJGSS, SunSASL, XMLDSig, SunPCSC, JdkLDAP, JdkSASL, SunMSCAPI, SunPKCS11
+[INFO ] 2024-11-25 16:29:45.921 [main] c.e.g.a.s.r.SystemCertificatesReader - Loaded certificates with aliases: [T8-8361.T8.CORP, GlobalSign Code Signing Root R45, Go Daddy Root Certificate Authority  G, Sectigo (formerly Comodo CA), DigiCert (2), Local NetFlt CA 3, DigiCert Baltimore Root, ISRG Root X1, Sectigo (AddTrust), Certum Trusted Network CA, Microsoft Authenticode(tm) Root, T8-AD-CA, GlobalSign Root CA - R6, GlobalSign Root CA - R3, GlobalSign Root CA - R1, TWCA Global Root CA, VeriSign Class 3 Public Primary CA, VeriSign Time Stamping CA, CFCA EV ROOT, GlobalSign ECC Root CA - R5, QuoVadis Root Certification Authority, SECOM Trust Systems Co Ltd., Entrust (2048), Microsoft RSA Root Certificate Authority 2017, Certum Trusted Network CA 2, Entrust.net, Symantec Enterprise Mobile Root for Microsoft, Microsoft Root Certificate Authority, Microsoft ECC Product Root Certificate Authority 2018, Microsoft Time Stamp Root Certificate Authority 2014, Hellenic Academic and Research Institutions RootCA 2015, Go Daddy Class 2 Certification Authority, DigiCert Trusted Root G4, Symfony T8\kudashkin@T8-8361 (Êóäàøêèí Ñåðãåé Èâàíîâè÷), thawte, DigiCert CS RSA4096 Root G5, Kaspersky Endpoint Security Personal Certification Authority, Sectigo (AAA), DST Root CA X3, StartCom Certification Authority, Sectigo (UTN Object), VeriSign, Microsoft ECC TS Root Certificate Authority 2018, Starfield Class 2 Certification Authority, HARICA TLS RSA Root CA 2021, Thawte Timestamping CA, Actalis Authentication Root CA, T8-CA, SSL.com Root Certification Authority RSA, DigiCert, Microsoft Root Certificate Authority 2011, Sectigo, Hotspot 2.0 Trust Root CA - 03, AD-CS, WoSign, Microsoft Timestamp Root, T8-AD-CS-CA, DigiCert Global Root G2, Microsoft Root Authority, DigiCert (1), DigiCert Global Root G3, Trustwave, VeriSign Universal Root Certification Authority, Microsoft Root Certificate Authority 2010, Starfield Root Certificate Authority  G]
+[INFO ] 2024-11-25 16:29:46.086 [main] c._.v.s.i.n.Connector - Trying to connect to 1cserver.T8.CORP :1540
+[INFO ] 2024-11-25 16:29:46.120 [main] c.e.g.e.c.i.p.ConsoleExecutionStep - [ExecuteScript]: done!
